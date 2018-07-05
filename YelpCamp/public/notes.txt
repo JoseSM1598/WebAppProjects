@@ -1,0 +1,20 @@
+RESTFUL ROUTES
+  name        url       verb      description
+============================================
+1) INDEX     /dogs      GET       Displays all dog
+
+2) NEW      /dogs/new   GET       Displays form to get new dog
+                                  (form sends action to /dogs)
+3) CREATE   /dogs       POST      Adds new dog to database
+
+4) SHOW     /dogs/:id    GET       Shows info about ONE dog
+
+5) EDIT     /dogs/:id/edit GET     Show edit form for ONE dog
+
+6) UPDATE   /dogs/:id    PUT       Update a particular dog then redirect somewhere
+
+7) DESTROY  /dogs/:id    DELETE    Delete a particular dog, then redirect somewhere
+
+
+db.collection.drop() removes all elements in a collection
+<!-- Using <%- instead of <%= allows users to enter html into the body -->
